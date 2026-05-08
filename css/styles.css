@@ -1,3 +1,11 @@
 body{
     background-color: #d9dcd6;
+    font-family: 'verdana';
+}
+
+.main{
+    background-color: #16425b;
+    color: #d9dcd6;
+    text-align: center;
+    
 }
