@@ -8,3 +8,7 @@ body{
     color: #d9dcd6;
     text-align: center; 
 }
+
+header {
+    text-transform: lowecase;
+ }
