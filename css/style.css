@@ -40,8 +40,19 @@ header {
     justify-content: flex-start;
     gap: 8px;
     text-transform: lowercase;
-    margin: 1vw;
     flex-wrap: wrap;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 1.5vw;
+    background-color: #d9dcd6;
+    border-bottom: 1px solid rgba(22, 66, 91, 0.15);
+}
+
+/* Keep anchor targets clear of the sticky header */
+section {
+    scroll-margin-top: 60px;
 }
 
 header a {
@@ -72,7 +83,7 @@ header a:hover {
     color: #d9dcd6;
 
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     box-sizing: border-box;
 
     padding: 40px 20px;
@@ -81,7 +92,32 @@ header a:hover {
 #main h1 {
     color: #d9dcd6;
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+#main .tagline {
+    color: #81c3d7;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.socials {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+}
+
+.socials svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+    transition: transform 0.15s;
+}
+
+.socials a:hover svg {
+    transform: translateY(-2px);
 }
 
 #main p {
@@ -104,9 +140,8 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
 
-    min-height: 100vh;
     box-sizing: border-box;
-    padding: 50px 10%;
+    padding: 60px 10%;
 }
 
 #about-me h2 {
@@ -128,27 +163,46 @@ header a:hover {
     text-transform: lowercase;
 }
 
-#resume-buttons {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-    gap: 15px;
-    padding: 15px 0;
-    flex-wrap: wrap;
+.resume-layout {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 40px;
+    align-items: start;
 }
 
-#resume-buttons a {
+#resume-nav {
+    position: sticky;
+    top: 80px;
+}
+
+#resume-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+    border-left: 2px solid rgba(22, 66, 91, 0.2);
+}
+
+#resume-nav a {
+    display: block;
+    padding: 8px 0 8px 16px;
+    margin-left: -2px;
+    border-left: 2px solid transparent;
     text-decoration: none;
+    color: #2f6690;
+}
+
+#resume-nav a:hover {
+    color: #16425b;
+}
+
+#resume-nav a.active {
     color: #16425b;
     font-weight: bold;
+    border-left-color: #16425b;
 }
 
-#resume-buttons a:hover {
-    color: #3a7ca5;
-    text-decoration: underline;
+.resume-body {
+    min-width: 0;
 }
 
 
@@ -425,7 +479,7 @@ main > h1 {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     header {
-        margin: 15px;
+        padding: 12px 15px;
         justify-content: center;
     }
 
@@ -434,7 +488,7 @@ main > h1 {
     }
 
     #main {
-        min-height: 85vh;
+        min-height: 75vh;
         padding: 40px 25px;
     }
 
@@ -443,17 +497,49 @@ main > h1 {
     }
 
     #about-me {
-        min-height: auto;
-        padding: 70px 25px;
+        padding: 50px 25px;
     }
 
     #resume {
         padding: 30px 25px;
     }
 
-    #resume-buttons {
-        justify-content: center;
-        gap: 20px;
+    .resume-layout {
+        display: block;
+    }
+
+    #resume-nav {
+        top: 45px;
+        z-index: 50;
+        background-color: #d9dcd6;
+        margin: 0 -25px;
+        padding: 0 25px;
+        border-bottom: 1px solid rgba(22, 66, 91, 0.15);
+    }
+
+    #resume-nav ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        margin: 0;
+        border-left: none;
+        overflow-x: auto;
+    }
+
+    #resume-nav a {
+        padding: 10px 0;
+        margin-left: 0;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+    }
+
+    #resume-nav a.active {
+        border-bottom-color: #16425b;
+    }
+
+    section {
+        scroll-margin-top: 100px;
     }
 
     #education,
