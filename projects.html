@@ -1,16 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Projects</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Dylan James in embedded systems, computer vision, and full-stack web development.">
+    <title>Projects | Dylan James</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
     <header>
-        <a href="projects.html">projects</a> | <a href="classes.html">classes</a> | <a href="index.html#resume">resume</a>
+        <a href="index.html" id="me">Dylan James</a> |
+        <a href="projects.html">projects</a> |
+        <a href="coursework.html">coursework</a> |
+        <a href="index.html#resume">resume</a>
     </header>
-    <h1>Projects</h1>
-    
-    </body>
+
+    <main id="top">
+        <h1>projects</h1>
+        <p class="intro">
+            A selection of projects demonstrating my experience
+            in embedded systems, software engineering, and
+            full-stack development.
+        </p>
+
+        <section class="card">
+            <h2>Firefighter Mesh Tracking System <span class="status">in progress</span></h2>
+            <p class="meta">Embedded systems &amp; networking &middot; EECS 473</p>
+            <p>
+                An offline communication system that tracks firefighter
+                locations and emergency status on scene, without relying
+                on cellular coverage.
+            </p>
+            <ul>
+                <li>
+                    Developing wearable communication nodes using ESP32
+                    microcontrollers and LoRa mesh networking (Meshtastic)
+                    to share location and status between firefighters.
+                </li>
+                <li>
+                    Designing an offline mapping interface that displays
+                    node locations, battery levels, and link status.
+                </li>
+                <li>
+                    Integrating with TAK-compatible services and deploying
+                    the backend server infrastructure with Docker.
+                </li>
+            </ul>
+            <ul class="tags">
+                <li>ESP32</li><li>LoRa</li><li>Meshtastic</li>
+                <li>Python</li><li>Docker</li><li>TAK</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>TrashAI - Autonomous Trash-Collecting Rover</h2>
+            <p class="meta">Embedded systems &amp; computer vision &middot; EECS 373</p>
+            <p>
+                An autonomous rover that uses computer vision to find
+                and identify waste, then drives to collect it. I worked
+                across both the vision system and the onboard firmware.
+            </p>
+            <ul>
+                <li>
+                    Built an OpenCV pipeline to detect and classify waste
+                    for autonomous pickup.
+                </li>
+                <li>
+                    Wrote embedded C firmware for an STM32 Nucleo to drive
+                    motors and servos and read onboard sensors.
+                </li>
+                <li>
+                    Implemented UART communication between the STM32 and an
+                    NVIDIA Jetson to coordinate vision and motion.
+                </li>
+                <li>
+                    Added proximity sensing and communication safeguards
+                    for reliable operation.
+                </li>
+            </ul>
+            <ul class="tags">
+                <li>C</li><li>STM32</li><li>Python</li><li>OpenCV</li>
+                <li>NVIDIA Jetson</li><li>UART</li>
+            </ul>
+            <p class="links">
+                <a href="https://github.com/Group7-TrashAI/nucleo_onboard"
+                   target="_blank" rel="noopener noreferrer">view firmware on GitHub &rarr;</a>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Insta485</h2>
+            <p class="meta">Full-stack web development &middot; EECS 485</p>
+            <p>
+                A full-stack Instagram-style web application with
+                accounts, posts, likes, comments, and user profiles.
+            </p>
+            <ul>
+                <li>
+                    Designed a relational SQLite schema to manage users,
+                    posts, and interactions.
+                </li>
+                <li>
+                    Built REST API endpoints in Flask with session-based
+                    authentication.
+                </li>
+                <li>
+                    Connected the API to a React frontend with dynamic
+                    content and infinite scrolling.
+                </li>
+            </ul>
+            <ul class="tags">
+                <li>Python</li><li>Flask</li><li>React</li>
+                <li>SQL</li><li>SQLite</li><li>REST APIs</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>The Ethical Equivalent <span class="status">in development</span></h2>
+            <p class="meta">Full-stack web development</p>
+            <p>
+                A web application that recommends more ethical
+                alternatives to everyday products, scored on waste
+                reduction, animal welfare, and labor practices.
+            </p>
+            <ul class="tags">
+                <li>Python</li><li>Flask</li><li>SQL</li>
+                <li>HTML</li><li>CSS</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="mailto:dyla@umich.edu">email</a> |
+            <a href="https://github.com/dylanexis"
+               target="_blank" rel="noopener noreferrer">github</a> |
+            <a href="https://www.linkedin.com/in/dylana-james/"
+               target="_blank" rel="noopener noreferrer">linkedin</a>
+        </p>
+    </footer>
+    <a href="#top" id="back-to-top" aria-label="Back to top">
+        ↑
+    </a>
+    <script src="js/main.js"></script>
+</body>
 </html>

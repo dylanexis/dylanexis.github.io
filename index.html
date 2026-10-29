@@ -1,23 +1,342 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Dylan James</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+<head>
+    <title>Dylan James</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dylan James - Computer Engineering student at the University of Michigan focused on embedded systems and software development.">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
     <header>
-        <a href="projects.html">projects</a> | <a href="classes.html">classes</a> | <a href="index.html#resume">resume</a>
+        <a href="index.html" id="me">Dylan James</a> |
+        <a href="projects.html">projects</a> |
+        <a href="coursework.html">coursework</a> |
+        <a href="#resume">resume</a>
     </header>
-    <div class="main">
-    <h1>Hi! I'm Dylan</h1>
-        <div>I am an undergraduate student at the University or Michigan - Ann Arbor studying Computer Engineering. You can learn more about me <a href="">here</a> or proceed to my resume below
-        </div>
-        </div>
-    <div class="resume">
-    </body>
+
+    <div class="root">
+
+        <section id="main">
+            <h1>Hi! I'm Dylan</h1>
+
+            <p>
+                I'm a senior studying Computer Engineering at the
+                University of Michigan - Ann Arbor.
+            </p>
+
+            <p>
+                I'm interested in software development, embedded systems,
+                and using technology to solve real-world problems.
+                I've worked on projects ranging from full-stack web
+                applications to autonomous robotics.
+            </p>
+
+            <p>
+                You can learn more about me <a href="#about-me">below</a>,
+                view my <a href="projects.html">projects</a>,
+                or check out my <a href="#resume">resume</a>.
+            </p>
+
+            <div class="btn-row">
+                <a href="projects.html" class="btn primary">view projects</a>
+                <a href="#resume" class="btn">resume</a>
+                <a href="https://github.com/dylanexis" class="btn"
+                   target="_blank" rel="noopener noreferrer">github</a>
+                <a href="https://www.linkedin.com/in/dylana-james/" class="btn"
+                   target="_blank" rel="noopener noreferrer">linkedin</a>
+                <a href="mailto:dyla@umich.edu" class="btn">contact</a>
+            </div>
+        </section>
+
+        <section id="about-me">
+            <h2>about me</h2>
+
+            <p>
+                I'm originally from Pontiac, Michigan, and currently
+                attend the University of Michigan, where I'm finishing
+                my degree in Computer Engineering.
+            </p>
+
+            <p>
+                I enjoy working on projects that involve both software
+                and hardware, especially when I get to build something
+                from the ground up. Through my coursework, internships,
+                and personal projects, I've gained experience in web
+                development, embedded programming, networking, and
+                software integration.
+            </p>
+
+            <p>
+                I'm always interested in learning new technologies,
+                working with others, and finding creative solutions
+                to challenging problems.
+            </p>
+        </section>
+
+        <section id="resume">
+            <h2>resume</h2>
+
+            <ul id="resume-buttons">
+                <li><span><a href="#education">education</a></span></li>
+                <li><span><a href="#experience">experience</a></span></li>
+                <li><span><a href="#projects">projects</a></span></li>
+                <li><span><a href="#skills">skills</a></span></li>
+            </ul>
+
+            <!-- Education -->
+            <div class="res_section">
+                <section id="education">
+                    <h2>education</h2>
+
+                    <h3>University of Michigan - Ann Arbor</h3>
+
+                    <em>
+                        <span>Bachelor of Science in Engineering</span>
+                        <span> | </span>
+                        <span>August 2022 - December 2026</span>
+                    </em>
+
+                    <div>
+                        <strong>Major:</strong> Computer Engineering
+                    </div>
+
+                    <div>
+                        <strong>Relevant Coursework:</strong>
+                        Data Structures & Algorithms, Embedded Systems Design,
+                        Web Systems, Logic Design, Computer Organization,
+                        Signals and Systems, Circuit Analysis & Design,
+                        Quantum Computing
+                    </div>
+                    <p>
+                        <a href="coursework.html">View more about my coursework</a>
+                    </p>
+
+                </section>
+            </div>
+
+            <!-- Experience -->
+            <div class="res_section">
+                <section id="experience">
+
+                    <h2>relevant experience</h2>
+
+                    <div class="exp_item">
+                        <h3>Networking & Software Development Intern</h3>
+
+                        <em>
+                            <span>Credit Union ONE</span>
+                            <span> | </span>
+                            <span>Ferndale, MI</span>
+                            <span> | </span>
+                            <span>February 2025 - April 2025</span>
+                        </em>
+
+                        <ul>
+                            <li>
+                                Collaborated with software development and
+                                networking teams to troubleshoot banking
+                                infrastructure, backend servers, and
+                                application issues.
+                            </li>
+                            <li>
+                                Supported improvements to customer-facing
+                                banking applications, working alongside
+                                developers maintaining C#-based software
+                                to improve usability and address bugs.
+                            </li>
+                            <li>
+                                Assisted with API-driven enhancements and
+                                troubleshooting to improve the reliability
+                                and user experience of digital banking services.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2>other experience</h2>
+
+                    <div class="exp_item">
+                        <h3>Crew Member</h3>
+
+                        <em>
+                            <span>Trader Joe's</span>
+                            <span> | </span>
+                            <span>Ann Arbor, MI</span>
+                            <span> | </span>
+                            <span>June 2025 - Present</span>
+                        </em>
+
+                        <ul>
+                            <li>
+                                Streamlined inventory flow through accurate
+                                receiving, stocking, and organization of
+                                merchandise.
+                            </li>
+                            <li>
+                                Performed quality checks to ensure products
+                                met brand standards for freshness and
+                                presentation.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="exp_item">
+                        <h3>Barista</h3>
+
+                        <em>
+                            <span>UMMA Cafe</span>
+                            <span> | </span>
+                            <span>Ann Arbor, MI</span>
+                            <span> | </span>
+                            <span>November 2024 - Present</span>
+                        </em>
+
+                        <ul>
+                            <li>
+                                Delivered efficient service in a fast-paced
+                                environment while coordinating with
+                                team members.
+                            </li>
+                            <li>
+                                Built positive customer interactions through
+                                clear communication and active listening.
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+
+            <!-- Projects -->
+            <div class="res_section">
+                <section id="projects">
+                    <h2>projects</h2>
+
+                    <div class="project_item">
+                        <h3>Insta485</h3>
+                        <em>Python, Flask, React, SQL, SQLite</em>
+
+                        <ul>
+                            <li>
+                                Developed a full-stack Instagram-style web
+                                application featuring user authentication,
+                                posts, likes, comments, and user profiles.
+                            </li>
+                            <li>
+                                Designed and implemented a relational SQLite
+                                database using SQL to manage users, posts,
+                                and interactions.
+                            </li>
+                            <li>
+                                Built REST API endpoints and connected them
+                                to a React frontend to support dynamic
+                                content and infinite scrolling.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project_item">
+                        <h3>Trash AI - Autonomous Trash-Collecting Rover</h3>
+                        <em>C, STM32, Python, OpenCV</em>
+
+                        <ul>
+                            <li>
+                                Developed embedded C firmware for an STM32
+                                Nucleo microcontroller to control motors,
+                                servos, and onboard sensors.
+                            </li>
+                            <li>
+                                Implemented UART communication between
+                                the microcontroller and an NVIDIA Jetson
+                                for coordinating autonomous operations.
+                            </li>
+                            <li>
+                                Built an OpenCV computer vision pipeline to
+                                detect and classify waste for autonomous
+                                pickup.
+                            </li>
+                            <li>
+                                Integrated motor control, proximity sensing,
+                                and communication safeguards to support
+                                reliable rover operation.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="project_item">
+                        <h3>Firefighter Mesh Tracking System</h3>
+                        <em>ESP32, LoRa, Meshtastic, Python, Docker</em>
+
+                        <ul>
+                            <li>
+                                Developing wearable communication nodes
+                                using ESP32 microcontrollers and LoRa
+                                networking to share firefighter locations
+                                and emergency status.
+                            </li>
+                            <li>
+                                Designing an offline mapping interface
+                                to display node locations, battery levels,
+                                and communication status.
+                            </li>
+                            <li>
+                                Working on backend integration with
+                                TAK-compatible services and deploying
+                                server infrastructure using Docker.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        <a href="projects.html">View more about my projects</a>
+                    </p>
+                </section>
+            </div>
+
+            <!-- Skills -->
+            <div class="res_section">
+                <section id="skills">
+                    <h2>skills</h2>
+
+                    <p>
+                        <strong>Programming Languages:</strong>
+                        C/C++, Python, Java, JavaScript,
+                        HTML/CSS, SQL, Verilog
+                    </p>
+
+                    <p>
+                        <strong>Frameworks & Tools:</strong>
+                        React, Flask, Django, Node.js,
+                        SQLite, REST APIs, Git, Docker,
+                        Linux, AWS
+                    </p>
+
+                    <p>
+                        <strong>Hardware & Embedded Systems:</strong>
+                        STM32, ESP32, UART, SPI, GPIO,
+                        PWM, LoRa, Meshtastic
+                    </p>
+                </section>
+            </div>
+
+        </section>
+
+    </div>
+
     <footer>
-        
+        <p>
+            <a href="mailto:dyla@umich.edu">email</a> |
+            <a href="https://github.com/dylanexis"
+               target="_blank" rel="noopener noreferrer">github</a> |
+            <a href="https://www.linkedin.com/in/dylana-james/"
+               target="_blank" rel="noopener noreferrer">linkedin</a>
+        </p>
     </footer>
+    <a href="#main" id="back-to-top" aria-label="Back to top">
+        ↑
+    </a>
+    <script src="js/main.js"></script>
+</body>
 </html>
